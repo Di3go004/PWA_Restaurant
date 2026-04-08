@@ -1,0 +1,28 @@
+info:
+  name: actualizar Usuario
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: http://localhost:5000/api/auth/update/8063e593-e299-4ac4-bb02-5738393d4d64
+  params:
+    - name: id
+      value: 8063e593-e299-4ac4-bb02-5738393d4d64
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: |-
+      {
+        "nombre": "Diego Chef actualizado2"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNmNWRhZmJmLTRjZjItNDM0YS04YTFkLTQzNjkzYTVkNzhlOSIsInJvbCI6ImFkbWluaXN0cmFkb3IiLCJpYXQiOjE3NzU2NzU0MDQsImV4cCI6MTc3NTcwNDIwNH0.B-OlNKvEmeHcXIETdmaPRMUSKn52AJ5g8hy4mnjzQjI
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
