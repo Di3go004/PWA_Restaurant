@@ -1,0 +1,23 @@
+info:
+  name: "crear platillo "
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:5000/api/platillos
+  body:
+    type: json
+    data: |-
+      {
+        "nombre": "haburguesa",
+        "descripcion":"muy rica",
+        "precio": 45.67
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

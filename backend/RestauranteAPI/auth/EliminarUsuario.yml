@@ -1,0 +1,17 @@
+info:
+  name: EliminarUsuario
+  type: http
+  seq: 6
+
+http:
+  method: DELETE
+  url: http://localhost:5000/api/auth/usuarios/8063e593-e299-4ac4-bb02-5738393d4d64
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNmNWRhZmJmLTRjZjItNDM0YS04YTFkLTQzNjkzYTVkNzhlOSIsInJvbCI6ImFkbWluaXN0cmFkb3IiLCJpYXQiOjE3NzU2NzU0MDQsImV4cCI6MTc3NTcwNDIwNH0.B-OlNKvEmeHcXIETdmaPRMUSKn52AJ5g8hy4mnjzQjI
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
